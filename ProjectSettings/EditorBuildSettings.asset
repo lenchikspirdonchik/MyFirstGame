@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MyFirstGame.unity
     guid: 75a9d2eeb0d648f40a824643cfb73fee
+  - enabled: 1
+    path: Assets/ZooScene.unity
+    guid: 1dc62677e4eeb074f9c6f93e6ffbd008
   m_configObjects: {}
