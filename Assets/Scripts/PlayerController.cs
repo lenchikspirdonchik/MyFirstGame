@@ -7,21 +7,23 @@ public class PlayerController : MonoBehaviour
     public Rigidbody rb;
     public float force;
     public float jumpForse;
-    protected Joystick joystick;
-    protected JoyButton joyButton;
-    protected bool jump;
+    private Joystick _joystick;
+    private JoyButton _joyButton;
+    private bool _jump;
     void Start()
     {
-        joystick = FindObjectOfType<Joystick>();
-        joyButton = FindObjectOfType<JoyButton>();
+        _joystick = FindObjectOfType<Joystick>();
+        _joyButton = FindObjectOfType<JoyButton>();
     }
 
  
      void FixedUpdate()
      {
-         rb.velocity = new Vector3(joystick.Horizontal * 10f,
+     
+         rb.AddForce(new Vector3(_joystick.Horizontal *  (force * Time.fixedDeltaTime),
              rb.velocity.y,
-             joystick.Vertical * 10f);
+             _joystick.Vertical* (force * Time.fixedDeltaTime)));
+         
          if (Input.GetKey(KeyCode.W))
              rb.AddForce(Vector3.forward * (force * Time.fixedDeltaTime));
        
@@ -37,15 +39,14 @@ public class PlayerController : MonoBehaviour
          if (Input.GetKeyDown(KeyCode.Space))
              rb.AddForce(Vector3.up * (jumpForse * Time.fixedDeltaTime));
 
-         if (!jump && joyButton.isPressed)
+         if (!_jump && _joyButton.isPressed)
          {
-             jump = true;
-             rb.velocity = Vector3.up * 10f;
+             _jump = true;
+            rb.AddForce(Vector3.up * (jumpForse * Time.fixedDeltaTime));
          }
 
-         if (jump && !joyButton.isPressed)
-         {
-             jump = false;
-         }
+         if (_jump && !_joyButton.isPressed) 
+             _jump = false;
+         
      }
 }
