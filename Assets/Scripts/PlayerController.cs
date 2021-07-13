@@ -10,6 +10,9 @@ public class PlayerController : MonoBehaviour
     private Joystick _joystick;
     private JoyButton _joyButton;
     private bool _jump;
+    
+  
+    
     void Start()
     {
         _joystick = FindObjectOfType<Joystick>();
