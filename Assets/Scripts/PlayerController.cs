@@ -22,11 +22,9 @@ public class PlayerController : MonoBehaviour
  
      void FixedUpdate()
      {
-     
-         rb.AddForce(new Vector3(_joystick.Horizontal *  (force * Time.fixedDeltaTime),
+       rb.AddForce(new Vector3(_joystick.Horizontal *  (force * Time.fixedDeltaTime),
              rb.velocity.y,
              _joystick.Vertical* (force * Time.fixedDeltaTime)));
-         
          if (Input.GetKey(KeyCode.W))
              rb.AddForce(Vector3.forward * (force * Time.fixedDeltaTime));
        

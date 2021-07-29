@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ZooScene.unity
     guid: 1dc62677e4eeb074f9c6f93e6ffbd008
+  - enabled: 1
+    path: Assets/WarWorld.unity
+    guid: b2de98b2f80ffcc4d8a94440dd2b7d3f
   m_configObjects: {}
