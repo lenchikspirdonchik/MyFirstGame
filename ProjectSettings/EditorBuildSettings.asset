@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WarWorld.unity
     guid: b2de98b2f80ffcc4d8a94440dd2b7d3f
+  - enabled: 1
+    path: Assets/MusicScene.unity
+    guid: 033756c7681ae4948af88aa01c750169
   m_configObjects: {}
