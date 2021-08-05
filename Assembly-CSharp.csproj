@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\TankController.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
      <Compile Include="Assets\Scripts\SpiderControl.cs" />
+     <Compile Include="Assets\Scripts\SubwayControl.cs" />
      <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
      <Compile Include="Assets\VoxelAnimals\Assets\Scripts\PlayerDogController.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
@@ -120,7 +121,6 @@
      <Compile Include="Assets\Scripts\JoyButton.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Triangles.cs" />
-     <Compile Include="Assets\Scripts\SubwayControl.cs" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
